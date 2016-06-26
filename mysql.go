@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	db, err := sql.Open("mysql", "root:root@tcp(localhost:3306)/wifi_auth?charset=utf8")
+	db, err := sql.Open("mysql", "root:root@tcp(localhost:3306)/golang?charset=utf8")
 	checkErr(err)
 	rows, err := db.Query("select id,login_time from user where id=1")
 	checkErr(err)
